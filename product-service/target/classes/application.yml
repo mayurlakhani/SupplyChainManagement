@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:product_service
+    username: root
+    password: root
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      path: /h2-console
+      settings.trace: false
+      settings.web-allow-others: false
+      enabled: true
